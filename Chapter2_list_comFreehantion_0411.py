@@ -31,3 +31,17 @@ print(list1)
 #hello를 10가 가지는 리스트 작성
 list1 = ["hello" for i in range(10)] #[0,1,2,3,.....10]
 print(list1)
+
+#0~10까지의 숫자 제곱을 원소로 가지는 리스트 작성 
+#And 짝수의 제곱만 
+l1 = [] 
+for i in range(10) :
+    if (i % 2 == 0) :
+        l1.append(i**2)
+print(l1)
+
+'''
+방법2.
+li = [i**2 for i in range(10) if i % 2 == 0]
+print(l1)
+'''
