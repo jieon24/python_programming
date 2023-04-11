@@ -64,3 +64,13 @@ food2 = food[:]
 print("deep copy")
 print("food :           ", food)
 print("food2 :          ", food2)
+print(food is food2)
+
+food2.append("gimbab")
+print("food :           ", food)
+print("food2 :          ", food2)
+
+food2.append("bibimbab")
+print("food :           ", food)
+print("wishlist :      ", wishlist)
+print("food2 :          ", food2)
