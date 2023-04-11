@@ -124,10 +124,15 @@ print(menu)
 menu.reverse()
 print(menu)
 
-#menu.sort
+#menu.sort #a,b,c,d순으로 변경
+print("==========================================================================")
 l1 = [ "banana", "apple", "orange" , "mango"]
-menu.sort()
-print(menu)
+print(l1)
+print("sorted(l1) : ", sorted(l1))
+print("l1         : ", l1)
+
+l1.sort()
+print(l1)
 
 #menu.clear()
 #del menu
