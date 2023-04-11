@@ -78,3 +78,29 @@ print(list2)
 
 list2 = list1[2:6:3] #list2['IoT', 'Python']
 print(list2)
+
+list3 = [1,2,3,4,5,6,7,8]
+list3[1:2] = list2
+print(list3)
+
+
+#list insert
+menu = []
+menu.append("짜장면")
+menu.append("써브웨이")
+menu.append("떡볶이")
+print(menu)
+menu.insert(0,"파스타")
+print(menu)
+menu.insert(2,"볶음밥")
+print(menu)
+
+menu.remove("써브웨이")
+print(menu)
+
+print("menu.pop : " , menu.pop())
+print(menu)
+print("menu.pop : " , menu.pop())
+print(menu)
+print("menu.pop : " , menu.pop())
+print(menu)
