@@ -45,3 +45,22 @@ print(l1)
 li = [i**2 for i in range(10) if i % 2 == 0]
 print(l1)
 '''
+
+#shallow copy
+food = ["apple","banana"]
+wishlist = food
+print("food :          ", food)
+print("wishlist :      ", wishlist)
+
+food.pop()
+print("after food.pop()")
+print("food :          ", food)
+print("wishlist :      ", wishlist)
+
+print(food is wishlist)
+
+#deep copy
+food2 = food[:]
+print("deep copy")
+print("food :           ", food)
+print("food2 :          ", food2)
