@@ -27,7 +27,11 @@ list2 = list()
 
 list1.append("Python")
 list1.append("Java")
+list1.append("Python")
 list1.append("C++")
+list1.append("Python")
+list1.append("Python")
+
 print(list1)
 print(list1[0])
 # list1이랑 같은 값이 나옴 ,list2 = ['Java', 'C++']
@@ -39,4 +43,43 @@ for i in range(len(list1)):
 print("======for 2======")
 for i in list1:
     print(i)
-  
+
+print(list1)
+print("count : ", list1.count("Python"))
+print("index : ", list1.index("Python"))
+#"hahah".index("a") 
+
+list1[0] = "AI"
+list1[2] = "IoT"
+print(list1) 
+
+list1[0:3:1] #0부터 3개값을 1칸씩
+
+print("==================================================")
+list2 = list1[0:3:1] #['AI', 'Java', 'IoT']
+print(list2)
+list2 = list1[1:5:1] #['Java', 'IoT', 'C++', 'Python']
+print(list2)
+list2 = list1[1:len(list1):2] #['Java', 'C++', 'Python']
+print(list2)
+list2 = list1[2:6:3] #['IoT', 'Python']
+print(list2)
+list2 = list1[::-1] #['Python', 'Python', 'C++', 'IoT', 'Java', 'AI']
+print(list2)
+
+#수정 불가 -> append, insert, 값 변경 X
+#[1,2,3,4]
+#(1,2,3,4) t1+t2 => t3
+#t1 +1 => t1
+
+#print(list3)
+#list1, list3
+#list1의 일부를 list3에 대입
+
+list2 = list1[2:6:3] #list2['IoT', 'Python']
+print(list2)
+
+list3 = [1,2,3,4,5,6,7,8]
+list3[1:2] = list2
+
+print(list3)
