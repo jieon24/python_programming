@@ -98,9 +98,22 @@ print(menu)
 menu.remove("써브웨이")
 print(menu)
 
+'''
 print("menu.pop : " , menu.pop())
 print(menu)
 print("menu.pop : " , menu.pop())
 print(menu)
 print("menu.pop : " , menu.pop())
 print(menu)
+'''
+
+#extend
+print(menu)
+dessert = ["커피", "아이스크림", "케이크", "와플"]
+
+menu_list = menu + dessert
+print(menu_list)
+
+menu.extend(dessert) #menu+dessert
+print(menu)
+
