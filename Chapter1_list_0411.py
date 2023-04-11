@@ -81,5 +81,6 @@ print(list2)
 
 list3 = [1,2,3,4,5,6,7,8]
 list3[1:2] = list2
-
 print(list3)
+
+print(list2)
