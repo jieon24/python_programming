@@ -107,7 +107,8 @@ print("menu.pop : " , menu.pop())
 print(menu)
 '''
 
-#extend
+#extend #추가
+print("==========================================================================")
 print(menu)
 dessert = ["커피", "아이스크림", "케이크", "와플"]
 
@@ -117,3 +118,22 @@ print(menu_list)
 menu.extend(dessert) #menu+dessert
 print(menu)
 
+#reverse #순서를 거꾸로 함
+print("==========================================================================")
+print(menu)
+menu.reverse()
+print(menu)
+
+#menu.sort
+l1 = [ "banana", "apple", "orange" , "mango"]
+menu.sort()
+print(menu)
+
+#menu.clear()
+#del menu
+#print(menu)
+
+#a = '1'
+#print(type(a))
+#print(int(a) + 5)
+#print(type(a))
