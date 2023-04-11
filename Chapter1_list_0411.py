@@ -1,4 +1,4 @@
-# 0411.py
+# Chapter1_list_0411.py
 #리스트, 튜플, 딕셔너리, 집합
 #김, 이, 박, 최,
 
@@ -77,10 +77,4 @@ print(list2)
 #list1의 일부를 list3에 대입
 
 list2 = list1[2:6:3] #list2['IoT', 'Python']
-print(list2)
-
-list3 = [1,2,3,4,5,6,7,8]
-list3[1:2] = list2
-print(list3)
-
 print(list2)
