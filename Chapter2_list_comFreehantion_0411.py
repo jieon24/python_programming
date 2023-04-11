@@ -61,6 +61,9 @@ print(food is wishlist)
 
 #deep copy
 food2 = food[:]
+food3 = list(food)
+
+
 print("deep copy")
 print("food :           ", food)
 print("food2 :          ", food2)
