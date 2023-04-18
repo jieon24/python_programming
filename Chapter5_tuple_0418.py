@@ -50,6 +50,9 @@ for i in range(1,13) :
     print(Month[i]) 
 
 #dictionary method
-print(Month.keys())
-print(Month.values())
-print(Month.items())
+print("Month.keys() : ", Month.keys())
+print("Month.values() : ", Month.values())
+print("Month.items() : ", Month.items())
+
+for i in Month.keys() :
+    print(Month[i])
