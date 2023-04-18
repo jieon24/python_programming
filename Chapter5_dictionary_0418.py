@@ -69,3 +69,42 @@ print(Month.update({13:'13월'}))
 print(Month)
 print(Month.update({3:'300'})) #추가X, 계속 값만 바뀜
 print(Month)
+
+coffee = ['Espresso','Americano','Latte']
+coffee = tuple(coffee)
+print(coffee)
+print(type(coffee))
+print(list(enumerate(coffee)))
+print(dict(enumerate(coffee)))
+
+
+
+
+
+#zip
+# list, tuple 가 여러개 -> 하나의 tuple의 조합으로 된 리스트
+li =['class1','class2','class3']
+YA = ['Hong', 'Kim', 'Lee']
+YB = ['Gang', 'Park', 'James']
+
+z = zip(li,YA,YB)
+print(type(z))
+print(z)
+print(list(z))
+print(tuple(zip(li,YA,YB)))
+
+food = ['한식','양식','중식','일식','분식']
+f1 = ['비빔밥','파스타','짜장면','스시','떡볶이']
+f2 = ['불고기','피자','탕수육','우동','라면']
+print(list(zip(food,f1,f2)))
+
+print("================")
+
+for i in range(5) : 
+    print(food[i] ,":" ,f1[i],f2[i])
+
+print("================")
+
+lfood = list(zip(food,f1,f2))
+for i in lfood :
+    print(i[0],i[1],i[2])
