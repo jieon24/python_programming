@@ -108,3 +108,19 @@ print("================")
 lfood = list(zip(food,f1,f2))
 for i in lfood :
     print(i[0],i[1],i[2])
+
+subject = ['Python','C','Java','AI','Iot']
+room = ['101','213','315','210','314']
+s = dict(zip(subject,room))
+
+while True :
+    c = input("What's your subject name? : ")
+    if c == "quit" :
+        print("quit을 입력했습니다. 종료합니다")
+        break
+    else :
+        if c in s.keys() : 
+            print(s[c])
+        else : 
+            continue
+
