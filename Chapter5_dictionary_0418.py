@@ -51,3 +51,21 @@ print("================")
 for k,v in Month.items() : #[1,'1월'] = [k, v]
     #print(item)
     print(v)
+
+# Month = {1:'1월', 2:'2월', 3:'3월', 4:'4월', 5:'5월', 6:'6월', 7:'7월', 8:'8월', 9:'9월', 10:'10월', 11:'11월', 12:'12월'}
+for i in Month : #Month.keys()
+    print(i) #처음은 keys값이 나온다.
+
+
+
+print("Month.pop(10) : ", Month.pop(10))
+print(Month)
+print("Month.popitem() : ", Month.popitem())
+print(Month)
+
+print(Month.update({3:'March'}))
+print(Month)
+print(Month.update({13:'13월'}))
+print(Month)
+print(Month.update({3:'300'})) #추가X, 계속 값만 바뀜
+print(Month)
