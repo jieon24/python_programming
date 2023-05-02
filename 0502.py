@@ -132,3 +132,41 @@ coffee = {"americano":3300, "latte    ":3800, "tea      ":2500}
 fun1(1,2,4,6,8,2,3,4,3,21,2,2,1,1,1,americano=3300, latte=3800, tea=2500)
 fun1(*lis1, **coffee)
 print(fun1(1,2,4,6,8,2,3,4,3,21,2,2,1,1,1,**coffee))
+
+#lambda function
+#function을 만드는데 이름 짓기가 귀찮고 실행문이 하나밖에 없음
+
+def addone(x) :
+    return x + 1
+print(addone(100))
+
+#lambda parmeter_name : 
+print((lambda x : x + 1)(100))
+
+def mysum2(num1,num2) :
+    return num1+num2
+print(mysum2(100,1000))
+
+#lambda parmeter_name : 
+print((lambda num1, num2 : num1 + num2)(100,1000))
+
+#map, filter
+#list가 존재할때
+lis1 = [1,2,3,4,5,6,7]
+addone()
+lis2 = [2,3,4,xxxx,]
+
+# map(함수, input리스트)
+map(addone, lis1) # => lis2
+# map(lambda함수, input리스트)
+map(lambda x : x + 1, lis1)
+
+list0 = [1,2,1,2,1,2,1,22]
+print(list(map(lambda x : x + 1,list0)))
+
+#lambda num1, num2 : num1 + num2
+lis1 = [1,2,3,4,5,6,7]
+lis2 = [2,3,4,76,8,21,99,43]
+#result = [2,4,6,8,10,.......,14]
+#map(함수, input리스트, inputlist2)
+print(list(map(lambda num1, num2 : num1 + num2,lis1,lis2)))
