@@ -24,3 +24,6 @@ import hello_0509 as h
 
 print("=================")
 h.helloworld()
+
+from new.hi import hello as he
+he.helloworld()
