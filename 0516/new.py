@@ -1,0 +1,3 @@
+# new.py
+
+print("hello")
